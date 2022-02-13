@@ -1,0 +1,219 @@
+
+/*                                 ---------Ajustes generales---------                                    */
+body{
+	margin: 0;
+	font-family:georgia, times, serif ;
+	color: #333;
+	font-size: 1.02rem;
+	line-height: 1.4em;
+}
+h1{
+	font-size: 2rem;
+	line-height: 1.3em;
+	color: white;
+}
+p{
+	margin-bottom: 1.6em;
+}
+
+
+/*                                    ----------Encabezado----------                                  */
+ 
+.container{
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+.encabezado{
+	background-color: #333;
+	color: black;
+	padding: 0.3em 0;
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+/* logo de la empresa */
+.logo{
+	padding-left:2rem ;
+}
+
+
+/* Buscador */
+.encabezado input{
+	width: 20rem;
+	height: 3em;
+}
+.button{
+	height: 3.4em;
+
+	border: none;
+    background: none;
+    cursor: pointer;
+
+    background: #808080;
+    color: white;
+}
+
+
+
+/* lo de la izquierda */
+.encabezado a{
+	color: white;
+	text-decoration: none;
+}
+
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.navegacion ul{
+	margin: 0;
+	padding-right: 1em;
+	list-style: none;
+}
+	.navegacion ul li{
+		display: inline-block;
+	}
+
+		.navegacion ul li a{
+			display: block;
+			padding: 0.5rem 1.2rem;
+			transition: all 0.3s linear;
+			border-radius: 5px;
+		}
+			.navegacion ul li a:hover{
+				background: #4a4a4a;
+			}
+
+
+/*                               --------Contenido de la pagina----------                                 */
+
+.main{
+	padding-top: 8rem;
+}
+
+/* Productos */
+.titulo_1{
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.productos{
+	flex-wrap: wrap;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+	.productos a{
+		padding: 0.9rem 0.9rem 0.4rem 1.2rem;
+		margin: 0 0.5rem;
+		display: block;
+		text-align: center;
+
+		text-decoration: none;
+		list-style: none;
+		color: black;
+
+
+		transition: all 0.3s linear;
+		border-radius: 5px;
+
+	}
+		.productos a:hover{
+			background: #2835;
+			
+		}
+
+
+/* Frases */
+.container_frases{
+    margin-top: 2em;
+    padding: 10px 0;
+    box-shadow: 0 0 10px #0000001a;
+    width: 100%;
+
+}
+	.frases ul{
+		text-align: center;
+	}
+
+		.frases ul li{
+			padding: 0 1rem;
+			display: inline-block;
+
+			text-decoration: none;
+			list-style: none;
+			color: black;
+		}
+
+		.frases ul li img p{
+			display: flex;
+			align-items: center;
+
+
+
+		}
+
+		.frases p{
+			margin: 5px 5px;
+			width: 10rem;
+		}
+
+
+
+
+
+
+
+
+
+/*                                    --------Pide de pagina--------                                      */
+.footer{
+	position: relative;
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 3rem 0;
+
+}
+
+
+/*                          ---------Adaptacion para tablets y celulares-----------                    */
+
+
+@media only screen and (max-width:800px){
+	.main{
+		padding-top: 13rem;
+	}
+
+	.navegacion ul li{
+		display:block;
+	}
+
+		.navegacion ul li a{
+			display: block;
+			padding: 0.5rem 0rem;
+			transition: all 0.3s linear;
+			border-radius: 5px;
+			text-align: center;
+		}
+			.navegacion ul li a:hover{
+				background: #4a4a4a;
+			}
+
+
+
+}
+	
+
+
+
